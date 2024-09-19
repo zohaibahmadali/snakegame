@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1af217;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border-radius: 20px;
+    background-color: aqua;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 90%;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    background-color: #fbff1e;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a2828;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    #score {
+        font-size: 20px;
+    }
+}
+/* Add to your existing CSS */
+.game-over-text {
+    font-size: 200px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#startGameBtn.hidden {
+    display: none;
+}
